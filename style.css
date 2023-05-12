@@ -1,0 +1,138 @@
+:root {
+    --bg-color:rgb(242, 242, 242);
+    --color-blue:rgb(0, 170, 212);
+    --color-violet:rgb(137, 44, 160);
+    --color-orange:rgb(255, 153, 85);
+    --color-mate: rgb(51, 51, 51);
+    --color-gray:rgb(230, 230, 230);
+    --color-shadow:rgba(0, 0, 0, 0.100);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.nav {
+    width: 100vw;
+    padding: 1em;
+    position: fixed;
+}
+
+.nav__ul { 
+    background-color: #fff;
+    display: flex;
+    margin: 1em auto;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: fit-content;
+    padding: 0.5em 1em;
+    border-radius: 0.7em;
+    box-shadow: 0 2em 2em var(--color-shadow);
+}
+
+.nav__li {
+    margin: 0 1em;
+}
+
+.nav__a {
+    text-decoration: none;
+    color: var(--color-mate);
+    display: flex;
+    justify-content: center;
+}
+
+.fi {
+    margin-right: 0.5em;
+    font-size: 1.3em;
+}
+
+.nav__a:hover{
+    color:var(--color-blue);
+}
+
+.bar {
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.bar__ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 95vh;
+    margin-left: 1em;
+    background-color:#fff;
+    border-radius: 0.8em;
+}
+
+.spacer{
+    width:0.5em;
+    height:0.5em;
+    background-color:var(--color-shadow);
+    border-radius: 50%;
+}
+
+.bar__li {
+    padding: 0.5em;
+}
+
+.bar__img {
+    width: 1.5em;
+}
+
+.home {
+    position: relative;
+    top: 15vh;
+    margin: auto;
+    max-width: 80em;
+    display: flex;
+}
+
+.home__imgs {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.home__logo {
+    width: 25em;
+    margin-bottom: 3em;
+}
+
+.home__welcome{
+    margin-left: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home__h1 {
+    font-size: 7em;
+}
+
+.home__p {
+    margin-left: 3em;
+}
+
+.home__worknets {
+    text-align: end;
+    margin: 3em 3em 0 0;
+    align-content: flex-end;
+}
+
+.home__img {
+    padding: 0 0.5em ;
+}
