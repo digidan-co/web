@@ -22,6 +22,7 @@ body {
     width: 100vw;
     padding: 1em;
     position: fixed;
+    z-index: 2;
 }
 
 .nav__ul { 
@@ -63,7 +64,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-
+    z-index: 2;
 }
 
 .bar__ul{
@@ -94,11 +95,13 @@ body {
 }
 
 .home {
-    position: relative;
+    padding: 6vw 0;
     top: 15vh;
     margin: auto;
-    max-width: 80em;
+    width: 90%;
+    max-width: 80vw;
     display: flex;
+    justify-content: center;
 }
 
 .home__imgs {
@@ -108,23 +111,32 @@ body {
 }
 
 .home__logo {
-    width: 25em;
-    margin-bottom: 3em;
+    min-width: 15em;
+    width: 25vw;
+    max-width: 26em;
+    margin-bottom: 3vw;
+}
+
+.home__services {
+    min-width: 15em;
+    width: 25vw;
+    max-width: 26em;
+    margin-bottom: 3vw;
 }
 
 .home__welcome{
-    margin-left: 10em;
+    margin-left: 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.home__h1 {
-    font-size: 7em;
+.home__h1{
+    font-size: 6vw;
 }
 
-.home__p {
-    margin-left: 3em;
+.home__p{
+    margin-left: 3vw;
 }
 
 .home__worknets {
@@ -135,4 +147,28 @@ body {
 
 .home__img {
     padding: 0 0.5em ;
+}
+
+.aboutme{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    width: 90vw;
+}
+
+.aboutme__me {
+    width: 50vw;
+    min-width: 25em;
+    max-width: 50em;
+    height: fit-content;
+}
+
+.aboutme__h1 {
+    font-size: 5vw;
+}
+
+.aboutme__p {
+    margin-bottom: 10vw;
 }
