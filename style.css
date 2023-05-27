@@ -21,6 +21,9 @@ body {
     font-family: 'Dm sans', 'sans-serif';
 }
 
+/* Estilos para el Nav y sus elementos */
+
+
 .nav {
     width: 100vw;
     position: fixed;
@@ -63,6 +66,8 @@ body {
     color:var(--color-blue);
 }
 
+/* Estilos para la barra la barra izquierda - Redes sociales */
+
 .bar {
     position: fixed;
     display: grid;
@@ -104,6 +109,8 @@ body {
     transform: scale(1.3);
 }
 
+/* Estilos para el bienvenido */
+
 .home {
     display: flex;
     margin: auto;
@@ -120,7 +127,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2em;
-
 }
 
 .home__welcome{
@@ -157,6 +163,8 @@ body {
 .home__img {
     padding: 0 0.5em ;
 }
+
+/* Estilos para el apartado de mi presentación */
 
 .aboutme{
     display: flex;
