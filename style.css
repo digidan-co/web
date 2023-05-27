@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 :root {
     --bg-color:rgb(242, 242, 242);
     --color-blue:rgb(0, 170, 212);
@@ -16,13 +18,13 @@
 
 body {
     background-color: var(--bg-color);
+    font-family: 'Dm sans', 'sans-serif';
 }
 
 .nav {
     width: 100vw;
-    padding: 1em;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
 }
 
 .nav__ul { 
@@ -32,14 +34,13 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: fit-content;
-    padding: 0.5em 1em;
+    width:40em;
     border-radius: 0.7em;
     box-shadow: 0 2em 2em var(--color-shadow);
 }
 
 .nav__li {
-    margin: 0 1em;
+    margin: 0.2em;
 }
 
 .nav__a {
@@ -47,11 +48,15 @@ body {
     color: var(--color-mate);
     display: flex;
     justify-content: center;
+    padding-left: 0.5em;
+    align-items: center;
+    transition: all ease-in 0.2s;
 }
 
 .fi {
-    margin-right: 0.5em;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    margin: 0.5em;
+    height: 1em;
 }
 
 .nav__a:hover{
@@ -64,7 +69,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    z-index: 2;
+    z-index: 1;
+    left: 0.5em;
 }
 
 .bar__ul{
@@ -74,7 +80,6 @@ body {
     align-items: center;
     list-style: none;
     height: 95vh;
-    margin-left: 1em;
     background-color:#fff;
     border-radius: 0.8em;
 }
@@ -92,57 +97,61 @@ body {
 
 .bar__img {
     width: 1.5em;
+    transition: transform ease 0.3s;
+}
+
+.bar__img:hover{
+    transform: scale(1.3);
 }
 
 .home {
-    padding: 6vw 0;
-    top: 15vh;
-    margin: auto;
-    width: 90%;
-    max-width: 80vw;
     display: flex;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    max-width: 80em;
     justify-content: center;
+    gap: 2em;
 }
 
 .home__imgs {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-}
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 
-.home__logo {
-    min-width: 15em;
-    width: 25vw;
-    max-width: 26em;
-    margin-bottom: 3vw;
-}
-
-.home__services {
-    min-width: 15em;
-    width: 25vw;
-    max-width: 26em;
-    margin-bottom: 3vw;
 }
 
 .home__welcome{
-    margin-left: 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.home__logo {
+    width: 20vw;
+    max-width: 20em;
+}
+
+.home__services {
+    width: 25vw;
+    max-width: 30em;
+}
+
+
 .home__h1{
     font-size: 6vw;
+    font-family: 'Poppins', sans-serif;
 }
 
 .home__p{
-    margin-left: 3vw;
+    width: 50vw;
+    max-width: 40em;
 }
 
 .home__worknets {
     text-align: end;
-    margin: 3em 3em 0 0;
-    align-content: flex-end;
 }
 
 .home__img {
@@ -150,18 +159,19 @@ body {
 }
 
 .aboutme{
-    margin: auto;
     display: flex;
-    align-items: center;
-    margin: auto;
     justify-content: center;
-    width: 90vw;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 10vh auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 .aboutme__me {
     width: 50vw;
     min-width: 25em;
-    max-width: 50em;
+    max-width: 30em;
     height: fit-content;
 }
 
@@ -169,6 +179,14 @@ body {
     font-size: 5vw;
 }
 
-.aboutme__p {
-    margin-bottom: 10vw;
+.aboutme__name {
+    max-width: 80em;
+    width: 100vw;
 }
+
+.aboutme__p {
+    width: 90vw;
+    max-width: 50em;
+    margin: -2em auto 1em;
+}
+
